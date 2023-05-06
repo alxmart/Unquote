@@ -13,9 +13,28 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Add generateRandomNumber() here
-
+    int generateRandomNumber(int max) {
+        double randomNumber = Math.random();
+        double result = max * randomNumber;
+        return (int) result;
+    }
 
     // Add getGameOverMessage() here
+    String getGameOverMessage(
+            int totalCorrect,
+            int totalQuestions) {
+
+        if (totalCorrect == totalQuestions) {
+            return "You got all " + totalQuestions +
+                    " right! You won!";
+        } else {
+            return "You got " + totalCorrect +
+                    " right out of " + totalQuestions +
+                    ". Better luck next time!";
+        }
+    }
+
+
 
 
 
