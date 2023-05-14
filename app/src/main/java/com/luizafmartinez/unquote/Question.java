@@ -21,10 +21,11 @@ public class Question {
             answer1 = answerOne;
             answer2 = answerTwo;
             answer3 = answerThree;
-            correctAnswer = correctAnswerIndex;
+            correctAnswer = correctAnswerIndex -1;
             playerAnswer = -1;
         }
             public boolean isCorrect() {
+
                 return playerAnswer == correctAnswer;
             }
         }
